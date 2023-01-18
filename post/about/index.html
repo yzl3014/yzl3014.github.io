@@ -9,7 +9,7 @@
 <meta name="description" content="世上无难事，只要肯登攀">
 <meta name="theme-color" content="#000">
 <title>关于 | 圆周率的博客</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1674018392573">
+<link rel="shortcut icon" href="/favicon.ico?v=1674022484157">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -202,10 +202,7 @@
     
     <div class="site-description right-motion">
       
-      
-      
-        <p>初二学生</p>
-      
+        <p id="binft">初二学生</p>
       
     </div>
     
@@ -227,10 +224,22 @@
   </div>
   
     
+      <div class="sidebar-item">
+        <span class="site-item-rss">
+            <i class="fa fa-rss"></i>
+            <a href="https://yzl3014.github.io/atom.xml" target="_blank">RSS</a>
+        </span>
+      </div>
+    
   
   
 
 
+
+  <div style="width: 100%; position: relative;">
+    <canvas id="canvasDiyBlock" style="width:100%;">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
+    <script src="/media/js/magic/clock.js"></script>
+  </div>
 
 </div>
             </div>
@@ -577,24 +586,22 @@
             
   
     
-      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    
+      <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
+<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
 
-<div id="gitalk-container"></div>
+<div id="disqus_thread"></div>
 
 <script>
-  var gitalk = new Gitalk({
-    clientID: '6f8bb08c587ca6d907ac',
-    clientSecret: '41a371a0df64300894d71fabe22327c3bec4655c',
-    repo: 'Gitalk',
-    owner: 'yzl3014',
-    admin: ['yzl3014'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-  gitalk.render('gitalk-container')
+  var options = {
+    shortname: 'GrideaBlog',
+    apikey: 'rgH3dEAY3jmkOGf4E3Zn90Qz0MrWm9RDft1tk7Uk0cFjRawSj0mhgDb6qOdlyXa0',
+  }
+  if ('') {
+    options.api = ''
+  }
+  var dsqjs = new DisqusJS(options)
 </script>
-    
     
   
 
@@ -644,6 +651,13 @@
             
         </div>
         
+          
+            
+              <div class="bg-img">
+                <img src="\media\images\bk.jpg" />
+              </div>
+              
+                
                   
                         
 </div>
@@ -1414,6 +1428,8 @@
 <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
 <script type="text/javascript" src="/media/js/mouse/fireworks.js"></script>
 
+
+  <script src="/media/js/cool.js"></script>
 
 
 
