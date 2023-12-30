@@ -2,5 +2,4 @@ remote_theme: pages-themes/cayman@v0.2.0
 plugins:
 - jekyll-remote-theme
 title: I'm yzl3014
-description: A middle school student.
-show_downloads: true
+description: Index of my projects.
